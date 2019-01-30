@@ -8,4 +8,4 @@ These project files are created for reference purposes and are completely open s
 
 This is a repository made by Prakhar Shukla. Happy coding!!
 
-![](https://drive.google.com/open?id=1AGEB0bqoH2dfIvWjLFbR8h8EFP9Edfhz)
+![](https://imgur.com/a/D1KTfxv)
