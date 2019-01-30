@@ -1,4 +1,6 @@
 //THIS PROGRAM IS NOT YET COMPLETE KINDLY STAY AWAY
+//If you want to improve upon this program please commit changes!
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
