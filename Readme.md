@@ -8,5 +8,4 @@ These project files are created for reference purposes and are completely open s
 
 <---------- Please use your common sense and brain before raising an issue -------------->
 
-
-###This is a repository made by Prakhar Shukla. Happy coding!!
+This is a repository made by Prakhar Shukla. Happy coding!!
