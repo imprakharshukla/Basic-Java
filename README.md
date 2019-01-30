@@ -1,2 +1,11 @@
 # Basic-Java
 This repo contains basic implementation of arrays, string and recursions.
+
+These project files are created for reference purposes and are completely open source. They can be downloaded and modified for personal or even commercial use. Any improvement in the quality of the code for a greater degree of understanding is highly appriciated but basesless and non-advantageous points will not be looked upon.
+
+<---------- PLease use your common sense and brain before raising an issue -------------->
+
+
+This is a repository made by Prakhar Shukla. Happy coding!!
+
+![](https://drive.google.com/open?id=1AGEB0bqoH2dfIvWjLFbR8h8EFP9Edfhz)
