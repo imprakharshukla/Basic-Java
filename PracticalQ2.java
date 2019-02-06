@@ -28,9 +28,9 @@ public class PracticalQ2 {
 
         // sen contains the string with multiple sentences
         int n=0;
-        for(int i=0;i<sen.length();++i)
+        for(int yh=0;yh<sen.length();++yh)
         {
-            char ch=sen.charAt(i);
+            char ch=sen.charAt(yh);
 
             if (ch!='.' && ch!='!' && ch!='?')
             {
@@ -48,40 +48,114 @@ public class PracticalQ2 {
                 //In this else statement we have the one sentence ar a time
 
 
-                senss[n]=sens.trim();
+                senss[n]=sens+" ";
                 ++n;
                 sens="";
             }
 
         }
 
-       // Here we have the sentences seperated on diff positions of the String array senss[]
+       // Here we have the sentences separated on diff positions of the String array senss[]
 
-        sort(senss,senss.length);
+
+
+
+
+
+        //Todo sorting begins here!
 
         for (int i=0;i<senss.length;++i)
         {
-            System.out.print(senss[i]+" ");
+            int space=0;
+            String temp=senss[i];
+            //System.out.println(temp);
+
+            //For obtaining the number of words in the string for dynamic change in the length of the array
+
+            for(int j=0;j<temp.length();++j)
+            {
+                char ch=temp.charAt(j);
+                if (ch==' ')
+                ++space;
+
+            }
+
+
+            String tempAr[]=new String [space];
+
+
+
+            // transferring the words in the array
+            String worrd="";
+
+            int l=0;
+            for(int u=0;u<temp.length();++u)
+            {
+
+
+                char ch=temp.charAt(u);
+                if (ch!=' ')
+                {
+                    worrd=worrd+ch;
+                }
+                else
+                {
+
+
+                    tempAr[l]=worrd+ch;
+                    ++l;
+                    worrd="";
+
+                }
+
+            }
+
+//            for(int r=0;r<tempAr.length;++r)
+//            {
+//                System.out.println(tempAr[r]);
+//            }
+
+           sort(tempAr);
+
+            //Now making a string from all the elements of the new array
+            String wooord="";
+            for (int hj=0;hj<tempAr.length;++hj)
+            {
+                wooord=wooord+tempAr[hj];
+
+            }
+
+            //Assigning it to the original thread of the parent array
+
+            senss[i]=wooord;
+                    wooord="";
+
         }
+
+        for (int i=0;i<senss.length;++i)
+        {
+            System.out.print(senss[i]);
+        }
+
 
     }
 
-    static void sort(String []s, int n)
-    {
-        for (int i=1 ;i<n; i++)
-        {
+
+
+    static void sort(String []s) {
+        for (int i = 1; i < s.length; i++) {
             String temp = s[i];
 
             // Insert s[j] at its correct position
             int j = i - 1;
-            while (j >= 0 && temp.length() < s[j].length())
-            {
-                s[j+1] = s[j];
+            while (j >= 0 && temp.length() < s[j].length()) {
+                s[j + 1] = s[j];
                 j--;
             }
-            s[j+1] = temp;
+            s[j + 1] = temp;
         }
     }
+
 
 
 }
